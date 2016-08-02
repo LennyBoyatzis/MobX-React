@@ -1,0 +1,12 @@
+.listFilters {
+  flex: 2;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  display: inline;
+  padding-left: 10px;
+}

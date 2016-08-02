@@ -1,11 +1,15 @@
 import React from 'react';
 import {render} from 'react-dom';
 import AppState from './AppState';
-import App from './App';
+import FilterList from './App';
+import styles from './styles/styles.css';
 
 const appState = new AppState();
 
 render(
-  <App appState={appState} />,
+  <FilterList
+    className={styles.container}
+    store={appState}
+  />,
   document.getElementById('app')
 );

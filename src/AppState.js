@@ -1,17 +1,9 @@
-import { observable } from 'mobx';
+import {observable} from 'mobx';
 
 class AppState {
-  @observable timer = 0;
-
-  constructor() {
-    setInterval(() => {
-      this.timer += 1;
-    }, 1000);
-  }
-
-  resetTimer() {
-    this.timer = 0;
-  }
+  @observable selectedFilter = 'Recently Viewed';
+  @observable filters = ['Recently Viewed', 'Recent Enquires', 'Recent Searches'];
+  @observable items = [];
 }
 
 export default AppState;
